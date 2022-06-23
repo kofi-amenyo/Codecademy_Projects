@@ -1,0 +1,52 @@
+$ git clone maryrose-hw myhomework
+Cloning into 'myhomework'...
+done.
+$ cd myhomework
+$ git branch comment_branch
+$ git checkout comment_branch
+Switched to branch 'comment_branch'
+$ git add .
+$ git commit -m"Comments added"
+[comment_branch b4c4d48] Comments added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch comment_branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin comment_branch
+
+$  git push --set-upstream origin comment_branch
+Counting objects: 3, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To /home/ccuser/workspace/js-homework/maryrose-hw
+ * [new branch]      comment_branch -> comment_branch
+Branch comment_branch set up to track remote branch comment_branch from origin.
+$ cd ../maryrose-hw
+$ git branch
+  comment_branch
+* master
+$ 

@@ -1,0 +1,24 @@
+$ git merge edits
+Auto-merging examples.md
+CONFLICT (content): Merge conflict in examples.md
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+$ git add README.md
+$ git add .
+$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        deleted:    .git_data_copy.tar.gz
+        modified:   README.md
+        modified:   examples.md
+
+$ git commit -m"Resolve merge conflict"
+[master 420599f] Resolve merge conflict
+$ git branch -d edits
+Deleted branch edits (was 0dc9f6a).
+$

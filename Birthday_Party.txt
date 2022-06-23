@@ -1,0 +1,38 @@
+$ git branch
+* master
+  moma
+  whitney
+$ git branch -D moma whitney
+Deleted branch moma (was 978e5a1).
+Deleted branch whitney (was 9b384f9).
+$ git branch unordered-list
+$ git checkout unordered-list
+Switched to branch 'unordered-list'
+$ git add .
+$ git commit -m"Git branch 2"
+[unordered-list 753487f] Git branch 2
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+$ git checkout master
+Switched to branch 'master'
+$ git merge unordered-list
+Updating 1481f5a..753487f
+Fast-forward
+ index.html | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+$ git branch big-heading
+$ gitch checkout big-heading
+bash: gitch: command not found
+$ git checkout big-heading
+Switched to branch 'big-heading'
+$ git add .
+$ git commit -m"Big Heading"
+[big-heading 3308bda] Big Heading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git checkout master
+Switched to branch 'master'
+$ git merge big-heading
+Updating 753487f..3308bda
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$

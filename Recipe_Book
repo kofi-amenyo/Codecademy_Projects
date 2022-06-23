@@ -1,0 +1,41 @@
+$ cd veggie-favorites
+$ git add .
+$ git commit -m"Chilli oils"
+On branch master
+nothing to commit, working directory clean
+$ git add .
+$ git commit -m"Chilli oils"
+[master 761ce8e] Chilli oils
+ 1 file changed, 1 insertion(+)
+$ cd ../veggie-clone
+$ git fetch
+remote: Counting objects: 12, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 12 (delta 6), reused 0 (delta 0)
+Unpacking objects: 100% (12/12), done.
+From /home/ccuser/workspace/recipe-book-a/veggie-favorites
+ * [new branch]      master     -> origin/master
+$ git merge origin/master
+Updating 4681ee4..761ce8e
+Fast-forward
+ chili.txt          | 15 ++++++++-------
+ margherita.txt     | 11 +++++++----
+ squash-lasagna.txt |  3 ++-
+ 3 files changed, 17 insertions(+), 12 deletions(-)
+$ git branch food_Changes
+$ git checkout food_Changes
+Switched to branch 'food_Changes'
+$ git add .
+$ git fetch
+$ git push
+fatal: The current branch food_Changes has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin food_Changes
+
+$ git push --set-upstream origin food_Changes
+Total 0 (delta 0), reused 0 (delta 0)
+To /home/ccuser/workspace/recipe-book-a/veggie-favorites
+ * [new branch]      food_Changes -> food_Changes
+Branch food_Changes set up to track remote branch food_Changes from origin.
+$ 

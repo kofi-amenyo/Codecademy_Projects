@@ -1,0 +1,57 @@
+$ git checkout HEAD road-not-taken.txt 
+$ 
+$ git checkout -- oven-bird.txt
+$ 
+$ git add road-not-taken.txt oven-bird.txt fire-and-ice.txt 
+$ git reset HEAD -- fire-and-ice.txt 
+Unstaged changes after reset:
+M       fire-and-ice.txt
+$ 
+$ git commit -m "Two poems without fire and ice."
+[master f46fda7] Two poems without fire and ice.
+ 2 files changed, 2 insertions(+)
+$ 
+$ git add road-not-taken.txt oven-bird.txt fire-and-ice.txt 
+$ git commit -m "All three poems."
+[master 300ad30] All three poems.
+ 3 files changed, 10 insertions(+), 2 deletions(-)
+$ git log 
+commit 300ad308c4d386c0133253102e69d0850b397c95
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Feb 11 00:16:02 2022 +0000
+
+    All three poems.
+
+commit f46fda7e2c711a3539023734441ba6771bfa4df1
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Feb 11 00:13:50 2022 +0000
+
+    Two poems without fire and ice.
+
+commit 8a8cf5a34991e23726fab0d5cfa630b6fb069dd6
+Author: danasselin <johndoe@example.com>
+Date:   Thu Nov 19 11:05:57 2015 -0500
+
+    Start Fire and Ice
+
+commit 7a737817881418fd12225ea3bd415c5ee9214eb8
+Author: danasselin <johndoe@example.com>
+Date:   Wed Nov 18 17:37:19 2015 -0500
+
+    Add work to Oven Bird
+
+commit 9bfc696d36fe2806f6624df6109e5c07ea4df48d
+Author: danasselin <johndoe@example.com>
+Date:   Wed Nov 18 17:35:12 2015 -0500
+
+    Add all but last line, Road Not Taken
+
+$ git reset f46fda7
+Unstaged changes after reset:
+M       fire-and-ice.txt
+M       oven-bird.txt
+M       road-not-taken.txt
+$ git checkout HEAD -- oven-bird.txt 
+$ git checkout HEAD -- fire-and-ice.txt 
+$ git checkout HEAD -- road-not-taken.txt 
+$ 

@@ -1,0 +1,15 @@
+$ git checkout -- portrait.txt 
+$ 
+$ git add portrait.txt 
+$ git commit -m "Brows and beard complete."
+[master 1e67dc0] Brows and beard complete.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git add portrait.txt tree.txt house.txt 
+$ git add .
+$ git reset HEAD -- house.txt 
+$ 
+$ git commit -m "Portrait and a tree."
+[master c5835b5] Portrait and a tree.
+ 2 files changed, 7 insertions(+), 2 deletions(-)
+$ 
+

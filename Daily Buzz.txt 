@@ -1,0 +1,42 @@
+$ pwd
+/home/ccuser/workspace/daily-buzz
+$ ls
+culture  health  national  technology
+$ cd national 
+$ cd politics
+$ ls
+policy
+$ mkdir elections
+$ cd elections 
+$ touch candidates.txt
+$ touch issues.txt 
+$  cd ../../../
+$ pwd
+/home/ccuser/workspace/daily-buzz
+$ mkdir business 
+$ cd business 
+$ ls
+$  mkdir startups
+$ cd ..
+$ cd startups
+bash: cd: startups: No such file or directory
+$ pwd
+/home/ccuser/workspace/daily-buzz
+$ cd daily-buzz
+bash: cd: daily-buzz: No such file or directory
+$ ls
+business  culture  health  national  technology
+$ cd business
+$ ls
+startups
+$ cd startups
+$ mkdir disruptors
+$ cd ../ ..
+$ pwd
+/home/ccuser/workspace/daily-buzz/business
+$ touch startups/disruptors tech.txt
+$ touch startups/disruptors design.txt
+$ cd ..
+$ pwd
+/home/ccuser/workspace/daily-buzz
+$ 
